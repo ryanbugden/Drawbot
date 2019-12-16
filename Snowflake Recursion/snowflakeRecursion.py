@@ -1,5 +1,4 @@
 import datetime
-import os
 import fontTools.ttLib.ttFont as ttFont
 
 message = "HAPPY HOLIDAYS"
@@ -106,7 +105,7 @@ drawFlake = Counter(drawFlake)
 
 
 
-# make the page and do it all
+# make the page and export
 newPage(w,h)
 fill(0)
 rect(0,0,w,h)
@@ -124,7 +123,7 @@ new_path = f"_snowFlakeRecursion_{timestamp}.jpg"
 saveImage(new_path)
 
 
-# # make animation
+# # sub in the below for animation
 
 # frames = 60
 # runs = 4
@@ -150,7 +149,7 @@ saveImage(new_path)
 #                 rotate(angle*flake, center = (w/2, h/2))
 #                 drawFlake(font_size)
                 
-now = datetime.datetime.now()
-timestamp = now.strftime("%Y-%m-%d_%H-%M")
-new_path = f"_snowFlakeRecursion_{timestamp}.mp4"
-saveImage(new_path)
+# now = datetime.datetime.now()
+# timestamp = now.strftime("%Y-%m-%d_%H-%M")
+# new_path = f"_snowFlakeRecursion_{timestamp}.mp4"
+# saveImage(new_path)
