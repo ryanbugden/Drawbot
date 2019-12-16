@@ -1,2 +1,2 @@
 # Drawbot
-A collection of Drawbot scripts
+A collection of some Drawbot scripts
